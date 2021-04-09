@@ -1,0 +1,5 @@
+#忽略www 目录下面的 pdf
+/www/*.pdf
+
+#忽略jquery 文件夹
+/node_modules
