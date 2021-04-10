@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1{
+        h1 {
             margin: 0 auto;
             color: pink;
             font-size: 28px;
@@ -14,10 +15,33 @@
         }
     </style>
 </head>
+
 <body>
     <h4>第四次修改</h4>
     <h3></h3>
     <h1>hello worf</h1>
     <p></p>
+    <script>
+        function Person(name) {
+            this.name = name;
+            // this.fn = fn = () => {
+            //     console.log(this);
+            // }
+        }
+        const fn = ()=>{
+            console.log(this);
+        }
+        // const fn = function(){
+        //     console.log(this);
+        // }
+        const obj = new Person('abc');
+
+        obj.fn = fn;
+
+        console.log(obj);
+        console.log(obj instanceof Object);
+        obj.fn();
+    </script>
 </body>
+
 </html>
